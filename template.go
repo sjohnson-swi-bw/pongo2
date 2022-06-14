@@ -24,8 +24,8 @@ func (tw *templateWriter) Write(b []byte) (int, error) {
 	return tw.w.Write(b)
 }
 
-func (t *Template) GetTokens() *[]Token {
-  return t.tokens
+func (t *Template) GetTokens() []*Token {
+	return t.tokens
 }
 
 type Template struct {
